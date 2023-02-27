@@ -19,7 +19,7 @@ jobs:
           node-version: 18.14
       - uses: actions/cache@v3
         with:
-          path: ./nodejs.node_modules
+          path: ./nodejs/node_modules
           key: nodejs-${{ hashFiles('./nodejs/package-lock.json') }}
       - name: Install packages
         run: npm install
